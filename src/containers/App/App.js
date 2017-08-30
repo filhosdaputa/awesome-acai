@@ -22,14 +22,20 @@ class App extends Component {
     return (
       <div className="App">
         <h1>awesome-acai</h1>
-        <ul>
-          {
-            this.state.sources.map(source => (<li key={source.id}>{source.name}</li>))
-          }
-        </ul>
+        <h2>Sources</h2>
         <div className={`loading ${this.state.loading ? '' : ' hide'}`}>
           Loading ...
         </div>
+        <ul className={`loading ${this.state.loading ? ' hide' : ''}`}>
+          {
+            this.state.sources.map(source => (
+              <li key={source.id}>
+                <h3>{source.name}</h3>
+                {source.description}
+              </li>
+            ))
+          }
+        </ul>
         <Footer />
       </div>
     );
