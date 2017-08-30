@@ -8,13 +8,14 @@ class App extends Component {
     super(props);
 
     this.state = {
+      loading: true,
       sources: []
     };
   }
 
   componentDidMount() {
     getSources({})
-      .then(data => (this.setState({ sources: data.sources })));
+      .then(data => (this.setState({ sources: data.sources, loading: false })));
   }
 
   render() {
@@ -26,6 +27,9 @@ class App extends Component {
             this.state.sources.map(source => (<li key={source.id}>{source.name}</li>))
           }
         </ul>
+        <div className={`loading ${this.state.loading ? '' : ' hide'}`}>
+          Loading ...
+        </div>
         <Footer />
       </div>
     );

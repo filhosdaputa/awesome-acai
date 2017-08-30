@@ -12,3 +12,7 @@
   padding: 1em;
   text-align: left;
 }
+
+.hide {
+  display: none;
+}
