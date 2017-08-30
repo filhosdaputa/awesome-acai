@@ -8,3 +8,9 @@
   color: #ccc;
   text-decoration: none;
 }
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

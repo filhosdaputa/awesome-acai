@@ -9,8 +9,12 @@
 .App ul {
   list-style: none;
   margin: 0;
-  padding: 0 1em;
+  padding: 1em;
   text-align: left;
+}
+
+.loading {
+  padding: 1em;
 }
 
 .hide {

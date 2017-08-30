@@ -23,10 +23,10 @@ class App extends Component {
       <div className="App">
         <h1>awesome-acai</h1>
         <h2>Sources</h2>
-        <div className={`loading ${this.state.loading ? '' : ' hide'}`}>
+        <div className={`loading ${this.state.loading ? '' : 'hide'}`.trim()}>
           Loading ...
         </div>
-        <ul className={`loading ${this.state.loading ? ' hide' : ''}`}>
+        <ul className={`${this.state.loading ? 'hide' : ''}`}>
           {
             this.state.sources.map(source => (
               <li key={source.id}>
@@ -36,7 +36,7 @@ class App extends Component {
             ))
           }
         </ul>
-        <Footer />
+        <Footer loading={this.state.loading} />
       </div>
     );
   }
