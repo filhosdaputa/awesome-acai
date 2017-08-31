@@ -1,12 +1,9 @@
 {
-  "extends": "airbnb",
+  "extends": "prettier",
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
-    "jsx-a11y/href-no-hash": "off",
-    "react/jsx-filename-extension": "off",
-    "comma-dangle": "off"
-  },
-  "env": {
-    "browser": true,
-    "jest": true
+    "prettier/prettier": "error"
   }
 }
