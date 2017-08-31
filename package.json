@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "format": "npx prettier --single-quote --write '{src,__{tests,mocks}__}/**/*.js'"
+    "format":
+      "prettier --single-quote --write '{src,__{tests,mocks}__}/**/*.{js,css}'"
   },
   "description": "awesome-acai",
   "main": "index.js",
@@ -30,7 +31,8 @@
     "eslint-plugin-react": "^7.3.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.4",
-    "prettier": "^1.6.1"
+    "prettier": "^1.6.1",
+    "prettier-eslint": "^7.1.0"
   },
   "keywords": [],
   "author": {
@@ -40,9 +42,9 @@
   "license": "ISC",
   "homepage": "https://mattiaerre.github.io/awesome-acai",
   "lint-staged": {
-    "*.js": [
-      "npm run format",
-      "git add"
-    ]
+    "*.js": ["npm run format", "git add"]
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

@@ -14,7 +14,8 @@
       }
     ],
     "jsx-a11y/href-no-hash": "off",
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "react/no-array-index-key": "off"
   },
   "env": {
     "browser": true

@@ -4,6 +4,7 @@ body {
   background: #f5f5f5;
 }
 
-body, select {
+body,
+select {
   font-family: 'Saira', sans-serif;
 }
