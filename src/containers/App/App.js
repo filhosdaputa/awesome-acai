@@ -99,7 +99,9 @@ class App extends Component {
                   </a>
                 </h2>
                 <p>{article.description}</p>
-                <span className="author">- {article.author} -</span>
+                <span className="author">
+                  {article.author ? `- ${article.author} -` : ''}
+                </span>
               </li>
             ))}
           </ul>
