@@ -11,7 +11,7 @@ class App extends Component {
     this.state = {
       loading: true,
       category: 'sport',
-      sources: [],
+      sources: []
     };
 
     this.setStateSources = this.setStateSources.bind(this);

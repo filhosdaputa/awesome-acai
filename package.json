@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "npx prettier --single-quote  --write '{src,__{tests,mocks}__}/**/*.js'"
   },
   "description": "awesome-acai",
   "main": "index.js",
@@ -37,7 +38,7 @@
   "homepage": "https://mattiaerre.github.io/awesome-acai",
   "lint-staged": {
     "*.js": [
-      "prettier --single-quote --trailing-comma es5 --write",
+      "npm run format",
       "git add"
     ]
   }

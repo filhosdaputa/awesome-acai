@@ -4,7 +4,9 @@ import './Footer.css';
 
 const Footer = ({ loading }) => (
   <footer className={`Footer ${loading ? 'bottom' : ''}`.trim()}>
-    <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">powered by News API</a>
+    <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer">
+      powered by News API
+    </a>
   </footer>
 );
 
