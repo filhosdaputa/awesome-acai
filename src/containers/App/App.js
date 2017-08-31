@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Footer from "../../components/Footer/Footer";
-import getSources from "../../api/get-sources";
-import categories from "../../data/categories.json";
-import "./App.css";
+import React, { Component } from 'react';
+import Footer from '../../components/Footer/Footer';
+import getSources from '../../api/get-sources';
+import categories from '../../data/categories.json';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -10,8 +10,8 @@ class App extends Component {
 
     this.state = {
       loading: true,
-      category: "sport",
-      sources: []
+      category: 'sport',
+      sources: [],
     };
 
     this.setStateSources = this.setStateSources.bind(this);
@@ -48,10 +48,10 @@ class App extends Component {
             </option>
           ))}
         </select>
-        <div className={`loading ${this.state.loading ? "" : "hide"}`.trim()}>
+        <div className={`loading ${this.state.loading ? '' : 'hide'}`.trim()}>
           Loading ...
         </div>
-        <ul className={`${this.state.loading ? "hide" : ""}`}>
+        <ul className={`${this.state.loading ? 'hide' : ''}`}>
           {this.state.sources.map(source => (
             <li key={source.id}>
               <h2>{source.name}</h2>

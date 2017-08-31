@@ -37,7 +37,7 @@
   "homepage": "https://mattiaerre.github.io/awesome-acai",
   "lint-staged": {
     "*.js": [
-      "prettier --write",
+      "prettier --single-quote --trailing-comma es5 --write",
       "git add"
     ]
   }
